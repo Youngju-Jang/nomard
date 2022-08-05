@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome to Kokoa Clone</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+    
+    <header class="welcome-header">
+        <h1 class="welcom-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcom-header__text">
+            If you have a KoKoa Account, log in with your email or phone number.
+        </p>
+    </header>
+
+    <form action="index.html" method="get" id="login-form" class="createForm">
+        <input id="username" name="username" type="text" placeholder="Email or phone number" required/>
+        <input id="password" name="password" type="password" placeholder="Password" minlength="5" required/>
+        <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password"/>
+        <h3 class="passConfirm hidden">비밀번호가 일치하지 않습니다.</h3>
+        <input type="submit" value="Create an Account"/>
+        <a href="index.html">Log in</a>
+        <a href="#">Find KoKo Account or Password</a>
+    </form>
+
+    
+    <div id="no-mobile">
+        <span>Your screen is too big );</span>
+    </div>
+    <div id="no-landscape">
+        <span>가로모드 미지원 );</span>
+    </div>
+    <script src="js/join.js"></script>
+    <script 
+        src="https://kit.fontawesome.com/cb6b8d521b.js" 
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
